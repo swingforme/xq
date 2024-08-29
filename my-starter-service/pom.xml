@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
-    <artifactId>xq</artifactId>
+    <artifactId>my-starter-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>xq</name>
-    <description>xq</description>
+    <name>my-starter-service</name>
+    <description>my-starter-service</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,10 +37,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <modules>
-        <module>my-starter</module>
-        <module>my-starter-service</module>
-    </modules>
     <build>
         <plugins>
             <plugin>
@@ -58,7 +54,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.example.xq.XqApplication</mainClass>
+                    <mainClass>com.example.mystarterservice.MyStarterServiceApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>
